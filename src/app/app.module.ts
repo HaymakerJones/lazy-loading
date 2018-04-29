@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AComponent } from './a/a.component';
 import { BComponent } from './b/b.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { BComponent } from './b/b.component';
     MainComponent,
     NotFoundComponent,
     AComponent,
-    BComponent
+    BComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
