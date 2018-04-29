@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AModule } from './a/a.module';
-import { BComponent } from './b/b.component';
+import { BModule } from './b/b.module';
 import { NavbarComponent } from './navbar/navbar.component';
 
 
@@ -16,12 +16,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     MainComponent,
     NotFoundComponent,
-    BComponent,
     NavbarComponent
   ],
   imports: [
     BrowserModule,
     AModule,
+    BModule,
     AppRoutingModule
   ],
   providers: [],
