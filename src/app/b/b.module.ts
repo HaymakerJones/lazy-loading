@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { BComponent } from './b.component';
 import { BChildComponent } from './b-child/b-child.component';
+import { routedComponents } from './b.routing';
 
 @NgModule({
     imports: [
-        CommonModule
+        CommonModule,
+        routedComponents
     ],
     exports: [
         BComponent,

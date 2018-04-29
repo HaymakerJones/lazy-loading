@@ -2,14 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { AComponent } from './a/a.component';
-import { BComponent } from './b/b.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'main', component: MainComponent },
-  { path: 'a', component: AComponent },
-  { path: 'b', component: BComponent },
+  { path: 'a', loadChildren: 'app/a/a.module#AModule' },
+  { path: 'b', loadChildren: 'app/b/b.module#BModule' },
   { path: '**', component: NotFoundComponent },
 ];
 
